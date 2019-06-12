@@ -1,0 +1,24 @@
+name: uaac
+version: 0.1.0
+commit_hash: 7d750cb
+uncommitted_changes: false
+jobs:
+- name: uaac
+  version: 9b07bb502721fc96264b13064d0e21ba57c90fff5ac8bbf9d71de4ba8b4840f8
+  fingerprint: 9b07bb502721fc96264b13064d0e21ba57c90fff5ac8bbf9d71de4ba8b4840f8
+  sha1: sha256:d341259942ea2a36d7a8fb57e5835c44a1031d9a8c3b86e948f32603b4cdefab
+  packages:
+  - uaac
+  - ruby-2.5.5-r0.10.0
+packages:
+- name: ruby-2.5.5-r0.10.0
+  version: 836a515cbf2a1756a3e4c82f155dbc0d9920c2b8b3cfab14a501b09089d1d1c3
+  fingerprint: 836a515cbf2a1756a3e4c82f155dbc0d9920c2b8b3cfab14a501b09089d1d1c3
+  sha1: sha256:ea17edcc56edb58d8ea47225887b8e9e8d80cd9ada316af91929964f244eabe0
+  dependencies: []
+- name: uaac
+  version: cdeac1f6298461874a08f7c20002e59f1f35bbbb94013ee635fc2fc296b18f8d
+  fingerprint: cdeac1f6298461874a08f7c20002e59f1f35bbbb94013ee635fc2fc296b18f8d
+  sha1: sha256:00f3baecfb974aee35c523afce8570e9f9165f2782d2fd94067843a450f2d741
+  dependencies:
+  - ruby-2.5.5-r0.10.0
