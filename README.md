@@ -12,6 +12,6 @@ bosh upload-release /tmp/uaac-boshrelease.tgz
 
 ```
 VERSION=x.y.z
-bosh create-release --name=uaac --version=${VERSION} --final --tarball=/tmp/uaac-boshrelease.tgz
-bosh upload-release /tmp/uaac-boshrelease.tgz
+bosh create-release --name=uaac --version=${VERSION} --final --tarball=/tmp/uaac-boshrelease-${VERSION}.tgz
+bosh upload-release /tmp/uaac-boshrelease-${VERSION}.tgz
 ```
