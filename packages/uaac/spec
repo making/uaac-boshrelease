@@ -1,0 +1,9 @@
+---
+name: uaac
+
+dependencies:
+- ruby-2.5.5-r0.10.0
+
+files:
+- uaac/Gemfile*
+- uaac/uaac-vendor.tgz

@@ -1,0 +1,3 @@
+source 'http://rubygems.org'
+
+gem 'cf-uaac', '4.1.0'

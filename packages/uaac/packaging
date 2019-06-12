@@ -1,0 +1,22 @@
+set -e
+RUBY_VERSION=2.5.5-r0.10.0
+source /var/vcap/packages/ruby-${RUBY_VERSION}/bosh/compile.env
+mkdir -p ${BOSH_INSTALL_TARGET}/gem_home
+
+# Install Bundler cache
+pushd ${BOSH_COMPILE_TARGET}/uaac
+  tar xvzf uaac-vendor.tgz
+  mv vendor/bundle/* ${BOSH_INSTALL_TARGET}/gem_home
+  rm -f uaac-vendor.tgz
+popd
+
+cp -a ${BOSH_COMPILE_TARGET}/uaac/* ${BOSH_INSTALL_TARGET}/
+
+cd ${BOSH_INSTALL_TARGET}
+
+bosh_bundle_local
+bosh_generate_runtime_env
+
+cat <<EOF >> ${BOSH_INSTALL_TARGET}/bosh/runtime.env
+source /var/vcap/packages/ruby-${RUBY_VERSION}/bosh/runtime.env
+EOF
