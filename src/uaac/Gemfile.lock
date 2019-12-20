@@ -32,7 +32,7 @@ GEM
       addressable (~> 2.3)
     multi_json (1.12.2)
     public_suffix (3.1.0)
-    rack (1.6.11)
+    rack (1.6.12)
 
 PLATFORMS
   ruby
